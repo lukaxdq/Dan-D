@@ -40,12 +40,10 @@ int main() {
     std::cin >> year;
     std::cout << "Enter month (1-12): ";
     std::cin >> month;
-
-    if (month < 1 || month > 12) {
-        std::cerr << "Invalid month!" << std::endl;
-        return 1;
-    }
-
     printMonth(year, month);
+
+    std::cout << "Press Enter to exit...";
+    std::cin.ignore();
+    std::cin.get();
     return 0;
 }

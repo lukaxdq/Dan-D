@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/PCuse/OneDrive/Radna površina/Dan-D",
-      "program": "c:/Users/PCuse/OneDrive/Radna površina/Dan-D/build/Debug/outDebug",
+      "cwd": "c:/Users/PCuse/OneDrive",
+      "program": "c:/Users/PCuse/OneDrive/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

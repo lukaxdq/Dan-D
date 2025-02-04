@@ -34,18 +34,29 @@ void printMonth(int year, int month) {
     std::cout << std::endl;
 }
 
+void printYear(int year) {
+    for (int month = 1; month <= 12; ++month) {
+        printMonth(year, month);
+        std::cout << std::endl;
+    }
+}
+
 int main() {
     int year, month;
     std::cout << "Enter year: ";
     std::cin >> year;
-    std::cout << "Enter month (1-12): ";
+    std::cout << "Enter month (1-12) or 0 to print the entire year: ";
     std::cin >> month;
 
-    if (month < 1 || month > 12) {
+    if (month < 0 || month > 12) {
         std::cerr << "Invalid month!" << std::endl;
         return 1;
     }
 
-    printMonth(year, month);
+    if (month == 0) {
+        printYear(year);
+    } else {
+        printMonth(year, month);
+    }
     return 0;
 }

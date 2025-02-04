@@ -18,5 +18,9 @@ This project is a simple C++ program that prints a calendar for a given month an
 
 1. Compile the program using a C++ compiler, for example:
    ```sh
-   g++ -o kalendar Kalendar.cp
-2. Run The exe     
+   g++ -o kalendar Kalendar.cpp
+   ```
+2. Run the executable:
+   ```sh
+   ./kalendar
+   ```
